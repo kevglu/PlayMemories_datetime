@@ -11,11 +11,12 @@ Convert (German) Sony Playmemorie folders to sensible format.
 
 * PyPI package: https://pypi.org/project/PlayMemories_datetime/
 * Free software: MIT License
-* Documentation: https://PlayMemories_datetime.readthedocs.io.
+<!-- * Documentation: https://PlayMemories_datetime.readthedocs.io. -->
 
 ## How to run:
 
 Root folder is specified by option ```-r [folder]``` or ```--root [folder] ``` 
+
 Calling Entry point With uv:
 ```
 uv run pm_dt -r "C:/Pictures" 
@@ -23,16 +24,21 @@ uv run pm_dt -r "C:/Pictures"
 
 Alternative name format can be specified with --format option
 ```
-uv run pm_dt -r "C:/Pictures" -format "pictures_%Y%-m%-%d"
+uv run pm_dt -r "C:/Pictures" --format "pictures_%Y%-m%-%d"
 ```
 
-
-
-
+## ToDO:
+- set up new uv lock file (current one is over-full)
 
 ## Features
 
 * TODO
+
+## Mass convert RAW to img
+- activate the virtual env in terminal:
+```raw-to-img-venv\Scripts\activate```
+- toinstall raw image converter ```pip3 install raw_image_converter```
+- 
 
 ## Credits
 
